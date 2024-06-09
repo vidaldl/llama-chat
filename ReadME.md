@@ -3,11 +3,11 @@
  
  
 
-[Check out my program!]()
+[Check out how it works!](https://youtu.be/2X6Kk8yyPNA)
 
 # Development Environment
 
-I used VS Code as a code editor, Ollama running Llama3, and python in this project. I also used PostMan to test my calls to the local Ollama server.
+I used VS Code as a code editor, Ollama running Llama3, and Node in this project. I also used PostMan to test my calls to the local Ollama server.
 
 # Useful Websites
 
@@ -28,7 +28,7 @@ I used VS Code as a code editor, Ollama running Llama3, and python in this proje
 1. **Clone the repository:**
    ```bash
    git clone git@github.com:vidaldl/llama-chat.git
-   cd file_organizer
+   cd llama-chat
    ```
 
 2. **Install the required libraries:**
