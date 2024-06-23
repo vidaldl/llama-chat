@@ -1,9 +1,15 @@
 # Overview
  This project was an interesting journey. I set out to make my own API on Node that connects to my personal computer running Llama3 which will have access to all of my files and more. I am going to be building on top of this in the near future to accomplish this.
+
+ **[Update]** \
+ I added Mongoose to the project. That way chats are saved not in the memory but are persistent. 
+ \
+ \
+ I will be focusing on making it better looking next!
  
  
 
-[Check out how it works!](https://youtu.be/2X6Kk8yyPNA)
+[Check out my demo video!](https://youtu.be/2X6Kk8yyPNA)
 
 # Development Environment
 
@@ -15,6 +21,7 @@ I used VS Code as a code editor, Ollama running Llama3, and Node in this project
 * [Python](https://www.w3schools.com/typescript/)
 * [Ollama API Documentation](https://github.com/ollama/ollama/blob/main/docs/api.md#generate-a-completion)
 * [Postman](https://www.postman.com/)
+* [Mongoose](https://mongoosejs.com/docs/)
 
 
 ## Requirements

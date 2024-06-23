@@ -4,16 +4,14 @@
   <title>Llama 3 Chat</title>
 </head>
 <body>
-  <h1>Chat with Llama 3</h1>
-  <div id="chat-box">
-    <% for(let i = 0; i < chatHistory.length; i++) { %>
-      <p><strong><%= chatHistory[i].role %>:</strong> <%= chatHistory[i].content %></p>
-    <% } %>
-  </div>
-  <form action="/chat" autocomplete="off" method="POST">
-    <input autocomplete="false" name="hidden" type="text" style="display:none;">
-    <input type="text" name="message" placeholder="Type a message..." required >
-    <button type="submit">Send</button>
+  <h1>Chats</h1>
+  <ul>
+    <% chats.forEach(chat => { %>
+      <li><a href="/chat/<%= chat._id %>">Chat <%= chat._id %></a></li>
+    <% }); %>
+  </ul>
+  <form action="/create-chat" method="POST">
+    <button type="submit">Create New Chat</button>
   </form>
 </body>
 </html>

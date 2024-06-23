@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat <%= chat._id %></title>
+</head>
+<body>
+  <h1>Chat <%= chat._id %></h1>
+  <a href="/">&#8592; Chats</a>
+  <div id="chat-box">
+    <% chat.messages.forEach(message => { %>
+      <p><strong><%= message.role %>:</strong> <%= message.content %></p>
+    <% }); %>
+  </div>
+  <form action="/chat/<%= chat._id %>" method="POST">
+    <input type="text" name="message" placeholder="Type a message..." required>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
