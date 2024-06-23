@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Llama 3 Chat</title>
+</head>
+<body>
+  <h1>Chats</h1>
+  <ul>
+    <% chats.forEach(chat => { %>
+      <li><a href="/chat/<%= chat._id %>">Chat <%= chat._id %></a></li>
+    <% }); %>
+  </ul>
+  <form action="/create-chat" method="POST">
+    <button type="submit">Create New Chat</button>
+  </form>
+</body>
+</html>
