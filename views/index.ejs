@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Llama 3 Chat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Sessions</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Chats</h1>
-  <ul>
-    <% chats.forEach(chat => { %>
-      <li><a href="/chat/<%= chat._id %>">Chat <%= chat._id %></a></li>
-    <% }); %>
-  </ul>
-  <form action="/create-chat" method="POST">
-    <button type="submit">Create New Chat</button>
-  </form>
+  <div class="sidebar">
+    <h2>Chats</h2>
+    <a class="chat-link" href="/create-chat">Start New Chat</a>
+    <div class="chat-list">
+      <% chats.forEach(chat => { %>
+        <a class="chat-link" href="/chat/<%= chat._id %>">Chat <%= chat._id %></a>
+      <% }); %>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Welcome to Llama Chat</h1>
+    <p>Select a chat or start a new one from the sidebar.</p>
+  </div>
 </body>
 </html>

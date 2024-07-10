@@ -1,0 +1,146 @@
+/* public/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #343541;
+    color: #d1d5db;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background: #202123;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-list {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .chat-link {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    background: #4a4d52;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .chat-link:hover {
+    background: #61666b;
+  }
+  
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #343541;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .chat-container {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message-container {
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  .message.user {
+    background: #3b82f6;
+    color: #fff;
+    border-bottom-right-radius: 0;
+    align-self: flex-end;
+    margin-right: 2em;
+  }
+  
+  .message.assistant {
+    background: #4b5563;
+    color: #fff;
+    border-bottom-left-radius: 0;
+    align-self: flex-start;
+  }
+  
+  .message-container.user {
+    justify-content: flex-end;
+  }
+  
+  .message-container.assistant {
+    justify-content: flex-start;
+  }
+  
+  .message {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    word-wrap: break-word;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    resize: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #2563eb;
+  }
+  
+
+  /* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #202123;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 10px;
+    border: 2px solid #202123;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: #202123;
+  }
